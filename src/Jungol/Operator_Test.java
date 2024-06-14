@@ -3,7 +3,7 @@ package Jungol;
 import java.io.*;
 import java.util.*;
 
-public class Operator {
+public class Operator_Test {
     public static void main(String[] args) throws IOException {
         test01();
     }

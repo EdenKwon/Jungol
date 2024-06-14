@@ -5,49 +5,105 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        test08();
+        exam05();
     }
 
-    public static void test01() {
-        System.out.println("Fun Programming!");
+    public static int[] readInt(BufferedReader br, int count) throws IOException {
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int[] numbers = new int[count];
+        for (int i = 0; i < count; i++) {
+            numbers[i] = Integer.parseInt(st.nextToken());
+        }
+        return numbers;
     }
 
-    public static void test02() {
-        System.out.println("Programming! It's fun.");
+    public static void exam01() throws IOException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        int sum = 0;
+        int avg;
+        int inputs[] = readInt(br, 4);
+
+        for(int i=0; i<inputs.length; i++) {
+            sum += inputs[i];
+        }
+
+        avg = sum / inputs.length;
+        bw.write("sum " + sum);
+        bw.newLine();
+        bw.write("avg " + avg);
+
+        br.close();
+        bw.flush();
     }
 
-    public static void test03() {
-        System.out.println("My name is Hong Gil Dong.");
-        System.out.println("I am 13 years old.");
+    public static void exam02() throws IOException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        int inputs[] = readInt(br, 2);
+        int a = inputs[0];
+        int b = inputs[1];
+        int result = a / b;
+        int left = a % b;
+
+        bw.write(a + " / " + b + " = " + result + "..." + left);
+
+        br.close();
+        bw.flush();
     }
 
-    public static void test04() {
-        System.out.println("(@) (@)");
-        System.out.println("(=^.^=)");
-        System.out.println("(-m-m-)");
+    public static void exam03() throws IOException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        int inputs[] = readInt(br, 2);
+        int width = inputs[0];
+        int length = inputs[1];
+        int area;
+
+        width += 5;
+        length *= 2;
+        area = width * length;
+
+        bw.write("width = " + width + "\n");
+        bw.write("length = " + length + "\n");
+        bw.write("area = " + area);
+
+        br.close();
+        bw.flush();
     }
 
-    public static void test05() {
-        System.out.println("I can program well.");
-        System.out.println("Dreams come true.");
+    public static void exam04() throws IOException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        int inputs[] = readInt(br, 2);
+        int a = inputs[0];
+        int b = inputs[1];
+
+        bw.write(++a + " " + b--);
+        bw.newLine();
+        bw.write(a + " " + b);
+
+        br.close();
+        bw.flush();
     }
 
-    public static void test06() {
-        System.out.println("My height\n" +
-                "170\n" +
-                "My weight\n" +
-                "68.600000");
-    }
+    public static void exam05() throws IOException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-    public static void test07() {
-        System.out.println("5 Dan\n" +
-                "5 * 2 = 10");
-    }
+        int minsu[] = readInt(br, 2);
+        int kiyoung[] = readInt(br, 2);
 
-    public static void test08() {
-        System.out.println("      item     count     price\n" +
-                "       pen        20       100\n" +
-                "      note         5        95\n" +
-                "    eraser       110        97");
+        bw.write((minsu[0] > kiyoung[0]) && (minsu[1] > kiyoung[1]) ? "true" : "false");
+
+        br.close();
+        bw.flush();
     }
 }
+
+
+
