@@ -115,14 +115,21 @@ public class Operator {
     public static void test08() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        int[] inputs = readInt(br, 3);
+        try {
+            int[] inputs = readInt(br, 3);
 
-        int a = inputs[0];
-        int b = inputs[1];
-        int c = inputs[2];
+            int a = inputs[0];
+            int b = inputs[1];
+            int c = inputs[2];
 
-        bw.write((a > b) && (a > c) ? "true" : "false");
-        bw.write((a == b) && (a == c) ? "true" : "false");
-        bw.flush();
+            bw.write((a > b) && (a > c) ? "true" : "false");
+            bw.write((a == b) && (a == c) ? "true" : "false");
+
+        } catch (Exception e) {
+
+        } finally {
+            bw.flush();
+            br.close();
+        }
     }
 }
