@@ -95,13 +95,47 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        int minsu[] = readInt(br, 2);
-        int kiyoung[] = readInt(br, 2);
+        int ms[] = readInt(br, 2);
+        int ky[] = readInt(br, 2);
+        Body minsu = new Body(ms[0], ms[1]);
+        Body kiyoung = new Body(ky[0], ky[1]);
 
-        bw.write((minsu[0] > kiyoung[0]) && (minsu[1] > kiyoung[1]) ? "true" : "false");
+        bw.write((minsu.getHeight() > kiyoung.getHeight()) &&
+                (minsu.getWeight() > kiyoung.getWeight()) ? "true" : "false");
 
         br.close();
         bw.flush();
+    }
+}
+
+class Body {
+    private int height;
+    private int weight;
+
+    public Body(int height, int weight) {
+        this.height = height;
+        this.weight = weight;
+    }
+
+    public Body() {
+        this.height = 0;
+        this.weight = 0;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public int getWeight() {
+        return weight;
     }
 }
 
