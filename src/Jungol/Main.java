@@ -6,7 +6,7 @@ import java.util.*;
 // prac,test,exam ==> 연습문제,형성평가,자가진단
 public class Main {
     public static void main(String[] args) throws IOException {
-
+        
     }
 
     public static int[] readInt(BufferedReader br, int count) throws IOException {
@@ -18,6 +18,3 @@ public class Main {
         return numbers;
     }
 }
-
-
-
