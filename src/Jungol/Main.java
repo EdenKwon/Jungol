@@ -124,13 +124,13 @@ public class Main {
 
     public static boolean checkNum(int num) {
         switch (num) {
-            case 1:
-            case 2:
-            case 3:
-            case 4:
+            case 1, 2, 3, 4 -> {
                 return true;
-            default:
+            }
+
+            default -> {
                 return false;
+            }
         }
     }
 }
