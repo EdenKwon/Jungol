@@ -8,13 +8,4 @@ public class Main {
     public static void main(String[] args) throws IOException {
         ;
     }
-
-    public static int[] readInt(BufferedReader br, int count) throws IOException {
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        int[] numbers = new int[count];
-        for (int i = 0; i < count; i++) {
-            numbers[i] = Integer.parseInt(st.nextToken());
-        }
-        return numbers;
-    }
 }

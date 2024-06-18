@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 
 // prac,test,exam ==> 연습문제,자가진단,형성평가
-public class LoopCtrl_Exam {
+public class LoopCtrl1_Exam {
     public static void main(String[] args) throws IOException {
         ex05();
     }
