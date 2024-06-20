@@ -3,7 +3,7 @@ package Java_Jungsuk;
 public class Main {
 
   public static void main(String[] args) {
-    ex04_2();
+    ex04_3();
   }
 
   public static boolean ex04_1(int x) {
@@ -24,7 +24,7 @@ public class Main {
     if (ch == 'x' || ch == 'X') { //3번
       return true;
     }
-    if (ch - '0' >= 0 && ch - '0' < 9) { //4번
+    if (ch - '0' >= 0 && ch - '0' <= 9) { //4번
       return true;
     }
     if ((ch - 'a' >= 0 && ch - 'a' < 27) || (ch - 'A' >= 0 && ch - 'A' < 27)) { //5번
@@ -42,7 +42,7 @@ public class Main {
     }
   }
 
-  public static Boolean ex04_1(String str) {
+  public static boolean ex04_1(String str) {
     if (str.equals("yes")) {
       return true;
     } else {
@@ -94,8 +94,8 @@ public class Main {
     System.out.println(i);
   }
 
-  public static void ex04_5() {
-    int i = 1, j = 1;
+  public static void ex04_5() { //수정
+    int i = 0, j = 0;
     while (i <= 10) {
       while (j <= i) {
         System.out.print("*");
@@ -160,7 +160,7 @@ public class Main {
 
       if(input > answer) {
         System.out.println("더 작은 수를 입력하세요.");
-      } else if(input <answer) {
+      } else if(input < answer) {
         System.out.println("더 큰 수를 입력하세요.");
       } else {
         System.out.println("맞췄습니다.");
