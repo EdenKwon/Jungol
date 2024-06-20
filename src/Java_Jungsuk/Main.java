@@ -18,7 +18,7 @@ public class Main {
   }
 
   public static boolean ex04_1(char ch) {
-    if (ch != ' ' && ch != ' ') { //2번 ?
+    if (ch != ' ' && ch != '\t') { //2번 ?
       return true;
     }
     if (ch == 'x' || ch == 'X') { //3번
