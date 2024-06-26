@@ -19,8 +19,20 @@ public class Account {
   }
 
   public void deposit(int money) {
-    balance -= money;
-    System.out.println(accNo + " 계좌에 " + money + "만원이 출금되었습니다.");
+    if(!checkBalance(balance, money)) {
+      System.out.println("계좌 잔액이 부족합니다. 출금 금액을 다시 설정해주세요.");
+    } else {
+      balance -= money;
+      System.out.println(accNo + " 계좌에 " + money + "만원이 출금되었습니다.");
+    }
+  }
+
+  public boolean checkBalance(int balance, int money) {
+    if(balance >= money) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
   public void setBalance(int balance) {
