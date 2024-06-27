@@ -5,7 +5,7 @@ import java.io.IOException;
 public class HomeworkBasic {
 
   public static void main(String[] args) {
-    method1();
+    method10();
   }
 
   public static void method1()  {
