@@ -1,4 +1,4 @@
-package Tests.Polymorphism;
+package Tests.Polymorphism.test1;
 
 public class Prob1 {
   public static void main(String[] args) {

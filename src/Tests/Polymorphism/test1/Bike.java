@@ -1,4 +1,4 @@
-package Tests.Polymorphism;
+package Tests.Polymorphism.test1;
 
 public class Bike extends Wheeler{
 
