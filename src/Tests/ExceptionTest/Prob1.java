@@ -20,11 +20,7 @@ public class Prob1 {
   }
 
   //필요할 경우 다음의 메서드 선언부분(메서드 시그너처)을 수정하시기 바랍니다.
-  private static int convert(String str) {
-    if(str == null || str.length() == 0) {
-      throw new IllegalArgumentException();
-    }
-
+  private static int convert(String str) throws IllegalArgumentException{
     return Integer.parseInt(str);
   }
 
