@@ -1,4 +1,4 @@
-package Tests.ObjectString;
+package Tests.ObjectString.ObjectEx1;
 
 public class Owner {
   private String name;
