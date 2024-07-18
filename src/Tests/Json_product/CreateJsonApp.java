@@ -8,7 +8,8 @@ public class CreateJsonApp {
     JSONObject jsonObject = UtilJson.createJsonData();
     System.out.println(jsonObject);
 
-    UtilJson.parseJsonData(jsonObject);
+    //UtilJson.parseJsonData(jsonObject);
+    UtilJson.parseJsonDataUseIterator(jsonObject);
   }
 
 }
