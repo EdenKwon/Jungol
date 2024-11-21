@@ -8,11 +8,7 @@ public class LoopCtrl1_Test {
     public static void main(String[] args) throws IOException {
         ex06();
     }
-<<<<<<< Updated upstream
-    
-=======
-    //어디감?
->>>>>>> Stashed changes
+
 
     public static int[] readInt(BufferedReader br, int count) throws IOException {
         StringTokenizer st = new StringTokenizer(br.readLine());
