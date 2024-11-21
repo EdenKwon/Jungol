@@ -8,6 +8,7 @@ public class LoopCtrl1_Test {
     public static void main(String[] args) throws IOException {
         ex06();
     }
+    
 
     public static int[] readInt(BufferedReader br, int count) throws IOException {
         StringTokenizer st = new StringTokenizer(br.readLine());
