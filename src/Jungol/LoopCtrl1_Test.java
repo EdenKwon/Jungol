@@ -9,8 +9,6 @@ public class LoopCtrl1_Test {
         ex06();
     }
 
-    ///다시시작
-    //다다다시
 
     public static int[] readInt(BufferedReader br, int count) throws IOException {
         StringTokenizer st = new StringTokenizer(br.readLine());
